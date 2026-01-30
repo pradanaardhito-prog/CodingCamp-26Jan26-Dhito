@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar-main">
+                <div class="logo">
+                    <div class="logo-img">Rv</div>
+                    <span>My Website</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#profile">Our Profile</a></li>
+                    <li><a href="#portfolio-section">Portfolio</a></li>
+                    <li><a href="#message">Message Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container hero">
+            <h1 id="welcome-title">Hi <span id="user-name">Guest</span>, Welcome To Website</h1> 
+            <p>Ini adalah website latihan pertama</p>
+            
+            <div class="banner-placeholder">
+                <div class="banner-text">1366x578</div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="headquarter-section">
+        <div class="container">
+            <h2 class="section-title">Our Headquarter</h2>
+            <div class="hq-container">
+                <div class="hq-item">
+                    <div class="circle">
+                        <img src="jkt.jpg" alt="Jakarta Office">
+                    </div>
+                    <p>Jakarta</p>
+                </div>
+                <div class="hq-item">
+                    <div class="circle">
+                        <img src="bdg.jpg" alt="Bandung Office">
+                    </div>
+                    <p>Bandung</p>
+                </div>
+                <div class="hq-item">
+                    <div class="circle">
+                        <img src="sby.jpg" alt="Surabaya Office">
+                    </div>
+                    <p>Surabaya</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="profile">
+        <div class="container">
+            <h2>Our Profile</h2>
+            <div class="profile-content">
+                <div class="profile-text">
+                    <h3>About Me</h3>
+                    <p>A Diploma IV student in Archiving and Digital Information who is meticulous, responsive, and responsible with experience in secretarial work, organizational administration, committee work, and archives management.</p>
+
+                    <h3>Vision & Mission</h3>
+                    <p><strong>Vision:</strong> Becoming a person with strong character and upholding the values of honesty and responsibility.</p>
+                    <p><strong>Mission:</strong> Maintain consistency between values and actions by always acting with integrity, respecting others, and continuing to develop maturity.</p>
+                </div>
+                <div class="profile-img-box">
+                    <span>Photo Banner</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="portfolio-section" class="portfolio-page">
+        <div class="container">
+            <h2>Our Portfolio</h2>
+            <div class="portfolio-container">
+                <div class="portfolio-item">
+                    <div class="portfolio-image"><span>Project 1</span></div>
+                    <h3>Web Development</h3>
+                    <p>Membangun sistem e-commerce untuk UMKM lokal.</p>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image"><span>Project 2</span></div>
+                    <h3>Mobile App</h3>
+                    <p>Aplikasi pelacakan kesehatan harian yang inovatif.</p>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image"><span>Project 3</span></div>
+                    <h3>UI/UX Design</h3>
+                    <p>Desain antarmuka modern untuk platform edukasi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="message">
+        <div class="container">
+            <h2>Message Us</h2>
+            <div class="message-section-container">
+                <div class="form-container">
+                    <form id="message-form">
+                        <div class="form-group">
+                            <label class="form-label">Nama :</label>
+                            <input type="text" id="input-name" placeholder="Nama" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Tanggal Lahir :</label>
+                            <input type="date" id="input-birth" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Jenis Kelamin :</label>
+                            <div class="radio-group">
+                                <input type="radio" id="male" name="gender" value="Laki-Laki" checked>
+                                <label for="male">Laki-Laki</label>
+                                <input type="radio" id="female" name="gender" value="Perempuan">
+                                <label for="female">Perempuan</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Pesan :</label>
+                            <textarea id="input-message" placeholder="Pesan" rows="4" required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+
+                <div class="output-container">
+                    <div id="output-result" class="result-box">
+                        <p><strong>Current time :</strong> <span id="res-time"></span></p>
+                        <p><strong>Nama :</strong> <span id="res-name"></span></p>
+                        <p><strong>Tanggal Lahir :</strong> <span id="res-birth"></span></p>
+                        <p><strong>Jenis Kelamin :</strong> <span id="res-gender"></span></p>
+                        <p><strong>Pesan :</strong> <span id="res-message"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container" style="text-align: right;">
+            Created By RevoU Student
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
